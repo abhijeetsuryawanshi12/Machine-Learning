@@ -4,9 +4,9 @@ import pandas as pd
 import pickle
 import numpy as np
 app = Flask(__name__)
-model = pickle.load(open('C:/Users/SURYAWANSHI SACHIN/Desktop/Coding/Machine Learning/Projects/Car Price Predictor/LinearRegression.pkl','rb'))
+model = pickle.load(open('LinearRegression.pkl','rb'))
 car = pd.read_csv(
-    "C:/Users/SURYAWANSHI SACHIN/Desktop/Coding/Machine Learning/Projects/Car Price Predictor/Cleaned Car.csv")
+    "Cleaned Car.csv")
 
 
 @app.route('/')
